@@ -1,0 +1,307 @@
+html {
+	overflow: hidden;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #EEE;
+	font-family: "微软雅黑";
+}
+
+#wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -250px;
+	width: 500px;
+	height: 120px;
+	text-align: center;
+}
+
+#wrapper h1 {
+	margin: 0 0 20px;
+	padding: 0;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+#wrapper h1 b {
+	font-weight: 700;
+}
+
+#start {
+	width: 120px;
+	height: 40px;
+	+margin-left: 260px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+#stop {
+	display: none;
+	width: 120px;
+	height: 40px;
+	vertical-align: middle;
+	font-family: 微软雅黑;
+	cursor: pointer;
+}
+
+#cfg {
+	color: #666;
+	text-shadow: 1px 1px 1px #eee;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.temp {
+	position: absolute;
+	z-index: -1;
+	color: #777;
+}
+
+#popbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -140px;
+	margin-left: -210px;
+	padding: 0 10px;
+	width: 400px;
+	height: 280px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	background: #fff;
+	-webkit-box-shadow: 0 0 22px #333, inset 0 -3px 7px #DDD;
+	-moz-box-shadow: 0 0 22px #333, inset 0 -3px 7px #DDD;
+	box-shadow: 0 0 22px #333, inset 0 -3px 7px #DDD;
+	+border: 1px solid #666;
+}
+
+#ok {
+	float: right;
+	margin: -3px 0 0;
+	color: #666;
+	cursor: pointer;
+	width: 50px;
+	height: 22px;
+}
+
+#loading {
+	background-color: #17607d;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	margin-top: 0;
+	top: 0
+}
+
+#loading-center {
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	height: 100px;
+	width: 100px;
+	margin-top: -50px;
+	margin-left: -50px
+}
+
+.object {
+	position: absolute;
+	height: 10px;
+	width: 50px;
+	background-color: #FFF
+}
+
+.object:nth-child(2n+0) {
+	-webkit-animation: animate_right 2s infinite;
+	animation: animate_right 2s infinite
+}
+
+.object:nth-child(2n+1) {
+	-webkit-animation: animate_left 2s infinite;
+	animation: animate_left 2s infinite
+}
+
+.object:nth-child(1) {
+	top: 0;
+	left: 0
+}
+
+.object:nth-child(2) {
+	top: 0;
+	left: 50px
+}
+
+.object:nth-child(3) {
+	top: 10px;
+	left: 0;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+.object:nth-child(4) {
+	top: 10px;
+	left: 50px;
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s
+}
+
+.object:nth-child(5) {
+	top: 20px;
+	left: 0;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+.object:nth-child(6) {
+	top: 20px;
+	left: 50px;
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s
+}
+
+.object:nth-child(7) {
+	top: 30px;
+	left: 0;
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+.object:nth-child(8) {
+	top: 30px;
+	left: 50px;
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s
+}
+
+.object:nth-child(9) {
+	top: 40px;
+	left: 0;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s
+}
+
+.object:nth-child(10) {
+	top: 40px;
+	left: 50px;
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s
+}
+
+.object:nth-child(11) {
+	top: 50px;
+	left: 0;
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s
+}
+
+.object:nth-child(12) {
+	top: 50px;
+	left: 50px;
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s
+}
+
+.object:nth-child(13) {
+	top: 60px;
+	left: 0;
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s
+}
+
+.object:nth-child(14) {
+	top: 60px;
+	left: 50px;
+	-webkit-animation-delay: .6s;
+	animation-delay: .6s
+}
+
+.object:nth-child(15) {
+	top: 70px;
+	left: 0;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s
+}
+
+.object:nth-child(16) {
+	top: 70px;
+	left: 50px;
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s
+}
+
+.object:nth-child(17) {
+	top: 80px;
+	left: 0;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s
+}
+
+.object:nth-child(18) {
+	top: 80px;
+	left: 50px;
+	-webkit-animation-delay: .8s;
+	animation-delay: .8s
+}
+
+.object:nth-child(19) {
+	top: 90px;
+	left: 0;
+	-webkit-animation-delay: .9s;
+	animation-delay: .9s
+}
+
+.object:nth-child(20) {
+	top: 90px;
+	left: 50px;
+	-webkit-animation-delay: .9s;
+	animation-delay: .9s
+}
+
+@-webkit-keyframes animate_right {
+	50% {
+		-ms-transform: translate(200px, -200px) rotate(180deg);
+		-webkit-transform: translate(200px, -200px) rotate(180deg);
+		transform: translate(200px, -200px) rotate(180deg)
+	}
+}
+
+@keyframes animate_right {
+	50% {
+		-ms-transform: translate(200px, -200px) rotate(180deg);
+		-webkit-transform: translate(200px, -200px) rotate(180deg);
+		transform: translate(200px, -200px) rotate(180deg)
+	}
+}
+
+@-webkit-keyframes animate_left {
+	50% {
+		-ms-transform: translate(-200px, -200px) rotate(180deg);
+		-webkit-transform: translate(-200px, -200px) rotate(180deg);
+		transform: translate(-200px, -200px) rotate(180deg)
+	}
+}
+
+@keyframes animate_left {
+	50% {
+		-ms-transform: translate(-200px, -200px) rotate(180deg);
+		-webkit-transform: translate(-200px, -200px) rotate(180deg);
+		transform: translate(-200px, -200px) rotate(180deg)
+	}
+}
